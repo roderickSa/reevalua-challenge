@@ -1,0 +1,123 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Subscription;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class SubscriptionSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        $data = [
+            ['full_name' => 'Carlos Mendoza García', 'document' => '45678901', 'email' => 'carlos.mendoza@gmail.com', 'phone' => '+51999000001'],
+            ['full_name' => 'María Elena Quispe Huamán', 'document' => '23456789', 'email' => 'maria.quispe@gmail.com', 'phone' => '+51999000002'],
+            ['full_name' => 'José Luis Fernández Torres', 'document' => '34567890', 'email' => 'jose.fernandez@gmail.com', 'phone' => '+51999000003'],
+            ['full_name' => 'Ana Patricia Rodríguez Silva', 'document' => '56789012', 'email' => 'ana.rodriguez@gmail.com', 'phone' => '+51999000004'],
+            ['full_name' => 'Luis Alberto Chávez Ramos', 'document' => '67890123', 'email' => 'luis.chavez@gmail.com', 'phone' => '+51999000005'],
+            ['full_name' => 'Carmen Rosa Díaz Vargas', 'document' => '78901234', 'email' => 'carmen.diaz@gmail.com', 'phone' => '+51999000006'],
+            ['full_name' => 'Pedro Miguel Sánchez López', 'document' => '89012345', 'email' => 'pedro.sanchez@gmail.com', 'phone' => '+51999000007'],
+            ['full_name' => 'Rosa María Flores Castillo', 'document' => '90123456', 'email' => 'rosa.flores@gmail.com', 'phone' => '+51999000008'],
+            ['full_name' => 'Juan Carlos Paredes Núñez', 'document' => '12345678', 'email' => 'juan.paredes@gmail.com', 'phone' => '+51999000009'],
+            ['full_name' => 'Lucía Fernanda Morales Vega', 'document' => '23456780', 'email' => 'lucia.morales@gmail.com', 'phone' => '+51999000010'],
+            ['full_name' => 'Ricardo Antonio Gutiérrez Paz', 'document' => '34567891', 'email' => 'ricardo.gutierrez@gmail.com', 'phone' => '+51999000011'],
+            ['full_name' => 'Sofía Alejandra Castro Ruiz', 'document' => '45678902', 'email' => 'sofia.castro@gmail.com', 'phone' => '+51999000012'],
+            ['full_name' => 'Fernando José Herrera Mendez', 'document' => '56789013', 'email' => 'fernando.herrera@gmail.com', 'phone' => '+51999000013'],
+            ['full_name' => 'Gabriela Inés Vargas Pinto', 'document' => '67890124', 'email' => 'gabriela.vargas@gmail.com', 'phone' => '+51999000014'],
+            ['full_name' => 'Diego Armando Reyes Salazar', 'document' => '78901235', 'email' => 'diego.reyes@gmail.com', 'phone' => '+51999000015'],
+            ['full_name' => 'Valeria Nicole Torres Aguilar', 'document' => '89012346', 'email' => 'valeria.torres@gmail.com', 'phone' => '+51999000016'],
+            ['full_name' => 'Andrés Felipe Romero Cruz', 'document' => '90123457', 'email' => 'andres.romero@gmail.com', 'phone' => '+51999000017'],
+            ['full_name' => 'Patricia Milagros Espinoza León', 'document' => '12345679', 'email' => 'patricia.espinoza@gmail.com', 'phone' => '+51999000018'],
+            ['full_name' => 'Miguel Ángel Delgado Ríos', 'document' => '23456781', 'email' => 'miguel.delgado@gmail.com', 'phone' => '+51999000019'],
+            ['full_name' => 'Claudia Beatriz Navarro Campos', 'document' => '34567892', 'email' => 'claudia.navarro@gmail.com', 'phone' => '+51999000020'],
+            ['full_name' => 'Roberto Carlos Medina Ortiz', 'document' => '45678903', 'email' => 'roberto.medina@gmail.com', 'phone' => '+51999000021'],
+            ['full_name' => 'Daniela Paola Jiménez Vera', 'document' => '56789014', 'email' => 'daniela.jimenez@gmail.com', 'phone' => '+51999000022'],
+            ['full_name' => 'Alejandro David Rojas Peña', 'document' => '67890125', 'email' => 'alejandro.rojas@gmail.com', 'phone' => '+51999000023'],
+            ['full_name' => 'Natalia Andrea Vásquez Luna', 'document' => '78901236', 'email' => 'natalia.vasquez@gmail.com', 'phone' => '+51999000024'],
+            ['full_name' => 'Sergio Iván Maldonado Soto', 'document' => '89012347', 'email' => 'sergio.maldonado@gmail.com', 'phone' => '+51999000025'],
+            ['full_name' => 'Mónica Cecilia Aguirre Montes', 'document' => '90123458', 'email' => 'monica.aguirre@gmail.com', 'phone' => '+51999000026'],
+            ['full_name' => 'Héctor Manuel Carrasco Bravo', 'document' => '12345680', 'email' => 'hector.carrasco@gmail.com', 'phone' => '+51999000027'],
+            ['full_name' => 'Adriana Lucero Palacios Cano', 'document' => '23456782', 'email' => 'adriana.palacios@gmail.com', 'phone' => '+51999000028'],
+            ['full_name' => 'Óscar Eduardo Figueroa Lara', 'document' => '34567893', 'email' => 'oscar.figueroa@gmail.com', 'phone' => '+51999000029'],
+            ['full_name' => 'Verónica Isabel Contreras Mora', 'document' => '45678904', 'email' => 'veronica.contreras@gmail.com', 'phone' => '+51999000030'],
+            ['full_name' => 'Raúl Ernesto Cabrera Solís', 'document' => '56789015', 'email' => 'raul.cabrera@gmail.com', 'phone' => '+51999000031'],
+            ['full_name' => 'Lorena Marisol Guerrero Ponce', 'document' => '67890126', 'email' => 'lorena.guerrero@gmail.com', 'phone' => '+51999000032'],
+            ['full_name' => 'Julio César Acosta Valdez', 'document' => '78901237', 'email' => 'julio.acosta@gmail.com', 'phone' => '+51999000033'],
+            ['full_name' => 'Silvia Paola Ibarra Fuentes', 'document' => '89012348', 'email' => 'silvia.ibarra@gmail.com', 'phone' => '+51999000034'],
+            ['full_name' => 'Enrique Alberto Miranda Ochoa', 'document' => '90123459', 'email' => 'enrique.miranda@gmail.com', 'phone' => '+51999000035'],
+            ['full_name' => 'Fabiola Cristina Peña Duarte', 'document' => '12345681', 'email' => 'fabiola.pena@gmail.com', 'phone' => '+51999000036'],
+            ['full_name' => 'Gustavo Adolfo Salinas Quiroz', 'document' => '23456783', 'email' => 'gustavo.salinas@gmail.com', 'phone' => '+51999000037'],
+            ['full_name' => 'Mariana Soledad Campos Ávila', 'document' => '34567894', 'email' => 'mariana.campos@gmail.com', 'phone' => '+51999000038'],
+            ['full_name' => 'Arturo Javier Molina Escobar', 'document' => '45678905', 'email' => 'arturo.molina@gmail.com', 'phone' => '+51999000039'],
+            ['full_name' => 'Carolina Andrea Rivas Gallegos', 'document' => '56789016', 'email' => 'carolina.rivas@gmail.com', 'phone' => '+51999000040'],
+            ['full_name' => 'Pablo Nicolás Sandoval Mejía', 'document' => '67890127', 'email' => 'pablo.sandoval@gmail.com', 'phone' => '+51999000041'],
+            ['full_name' => 'Elena Beatriz Cortés Zamora', 'document' => '78901238', 'email' => 'elena.cortes@gmail.com', 'phone' => '+51999000042'],
+            ['full_name' => 'Víctor Hugo Domínguez Arce', 'document' => '89012349', 'email' => 'victor.dominguez@gmail.com', 'phone' => '+51999000043'],
+            ['full_name' => 'Jimena Alejandra León Pacheco', 'document' => '90123460', 'email' => 'jimena.leon@gmail.com', 'phone' => '+51999000044'],
+            ['full_name' => 'Mauricio René Ortega Villar', 'document' => '12345682', 'email' => 'mauricio.ortega@gmail.com', 'phone' => '+51999000045'],
+            ['full_name' => 'Paola Fernanda Suárez Coronado', 'document' => '23456784', 'email' => 'paola.suarez@gmail.com', 'phone' => '+51999000046'],
+            ['full_name' => 'Ignacio Martín Vera Alvarado', 'document' => '34567895', 'email' => 'ignacio.vera@gmail.com', 'phone' => '+51999000047'],
+            ['full_name' => 'Camila Valentina Núñez Benítez', 'document' => '45678906', 'email' => 'camila.nunez@gmail.com', 'phone' => '+51999000048'],
+            ['full_name' => 'Rodrigo Sebastián Cruz Montoya', 'document' => '56789017', 'email' => 'rodrigo.cruz@gmail.com', 'phone' => '+51999000049'],
+            ['full_name' => 'Luciana Belén Ramírez Cordero', 'document' => '67890128', 'email' => 'luciana.ramirez@gmail.com', 'phone' => '+51999000050'],
+            ['full_name' => 'Martín Eduardo Soto Villalobos', 'document' => '78901239', 'email' => 'martin.soto@gmail.com', 'phone' => '+51999000051'],
+            ['full_name' => 'Isabella Fernanda Moreno Salas', 'document' => '89012350', 'email' => 'isabella.moreno@gmail.com', 'phone' => '+51999000052'],
+            ['full_name' => 'Sebastián Alonso Arias Bustamante', 'document' => '90123461', 'email' => 'sebastian.arias@gmail.com', 'phone' => '+51999000053'],
+            ['full_name' => 'Antonella Milagros Gil Paredes', 'document' => '12345683', 'email' => 'antonella.gil@gmail.com', 'phone' => '+51999000054'],
+            ['full_name' => 'Nicolás Andrés Ruiz Sepúlveda', 'document' => '23456785', 'email' => 'nicolas.ruiz@gmail.com', 'phone' => '+51999000055'],
+            ['full_name' => 'Renata Sofía Herrera Valenzuela', 'document' => '34567896', 'email' => 'renata.herrera@gmail.com', 'phone' => '+51999000056'],
+            ['full_name' => 'Emilio Francisco Castillo Araya', 'document' => '45678907', 'email' => 'emilio.castillo@gmail.com', 'phone' => '+51999000057'],
+            ['full_name' => 'Valentina Paz Vega Contreras', 'document' => '56789018', 'email' => 'valentina.vega@gmail.com', 'phone' => '+51999000058'],
+            ['full_name' => 'Tomás Ignacio Pinto Figueroa', 'document' => '67890129', 'email' => 'tomas.pinto@gmail.com', 'phone' => '+51999000059'],
+            ['full_name' => 'Catalina Andrea Muñoz Espinosa', 'document' => '78901240', 'email' => 'catalina.munoz@gmail.com', 'phone' => '+51999000060'],
+            ['full_name' => 'Matías Felipe Lagos Guerrero', 'document' => '89012351', 'email' => 'matias.lagos@gmail.com', 'phone' => '+51999000061'],
+            ['full_name' => 'Florencia Isidora Bravo Carrasco', 'document' => '90123462', 'email' => 'florencia.bravo@gmail.com', 'phone' => '+51999000062'],
+            ['full_name' => 'Benjamín Esteban Fuentes Acosta', 'document' => '12345684', 'email' => 'benjamin.fuentes@gmail.com', 'phone' => '+51999000063'],
+            ['full_name' => 'Agustina Macarena Rojas Ibarra', 'document' => '23456786', 'email' => 'agustina.rojas@gmail.com', 'phone' => '+51999000064'],
+            ['full_name' => 'Lucas Gabriel Peña Miranda', 'document' => '34567897', 'email' => 'lucas.pena@gmail.com', 'phone' => '+51999000065'],
+            ['full_name' => 'Josefina Antonia Salazar Peña', 'document' => '45678908', 'email' => 'josefina.salazar@gmail.com', 'phone' => '+51999000066'],
+            ['full_name' => 'Santiago José Quiroz Salinas', 'document' => '56789019', 'email' => 'santiago.quiroz@gmail.com', 'phone' => '+51999000067'],
+            ['full_name' => 'Amanda Cristina Ávila Campos', 'document' => '67890130', 'email' => 'amanda.avila@gmail.com', 'phone' => '+51999000068'],
+            ['full_name' => 'Felipe Andrés Escobar Molina', 'document' => '78901241', 'email' => 'felipe.escobar@gmail.com', 'phone' => '+51999000069'],
+            ['full_name' => 'Constanza Belén Gallegos Rivas', 'document' => '89012352', 'email' => 'constanza.gallegos@gmail.com', 'phone' => '+51999000070'],
+            ['full_name' => 'Joaquín Alonso Mejía Sandoval', 'document' => '90123463', 'email' => 'joaquin.mejia@gmail.com', 'phone' => '+51999000071'],
+            ['full_name' => 'Trinidad Esperanza Zamora Cortés', 'document' => '12345685', 'email' => 'trinidad.zamora@gmail.com', 'phone' => '+51999000072'],
+            ['full_name' => 'Maximiliano José Arce Domínguez', 'document' => '23456787', 'email' => 'maximiliano.arce@gmail.com', 'phone' => '+51999000073'],
+            ['full_name' => 'Francisca Javiera Pacheco León', 'document' => '34567898', 'email' => 'francisca.pacheco@gmail.com', 'phone' => '+51999000074'],
+            ['full_name' => 'Vicente Tomás Villar Ortega', 'document' => '45678909', 'email' => 'vicente.villar@gmail.com', 'phone' => '+51999000075'],
+            ['full_name' => 'Isidora Fernanda Coronado Suárez', 'document' => '56789020', 'email' => 'isidora.coronado@gmail.com', 'phone' => '+51999000076'],
+            ['full_name' => 'Cristóbal Mateo Alvarado Vera', 'document' => '67890131', 'email' => 'cristobal.alvarado@gmail.com', 'phone' => '+51999000077'],
+            ['full_name' => 'Maite Alejandra Benítez Núñez', 'document' => '78901242', 'email' => 'maite.benitez@gmail.com', 'phone' => '+51999000078'],
+            ['full_name' => 'Alonso Sebastián Montoya Cruz', 'document' => '89012353', 'email' => 'alonso.montoya@gmail.com', 'phone' => '+51999000079'],
+            ['full_name' => 'Emilia Catalina Cordero Ramírez', 'document' => '90123464', 'email' => 'emilia.cordero@gmail.com', 'phone' => '+51999000080'],
+            ['full_name' => 'Bruno Ignacio Villalobos Soto', 'document' => '12345686', 'email' => 'bruno.villalobos@gmail.com', 'phone' => '+51999000081'],
+            ['full_name' => 'Martina Isidora Salas Moreno', 'document' => '23456788', 'email' => 'martina.salas@gmail.com', 'phone' => '+51999000082'],
+            ['full_name' => 'Gaspar Eduardo Bustamante Arias', 'document' => '34567899', 'email' => 'gaspar.bustamante@gmail.com', 'phone' => '+51999000083'],
+            ['full_name' => 'Amparo Soledad Paredes Gil', 'document' => '45678910', 'email' => 'amparo.paredes@gmail.com', 'phone' => '+51999000084'],
+            ['full_name' => 'León Maximiliano Sepúlveda Ruiz', 'document' => '56789021', 'email' => 'leon.sepulveda@gmail.com', 'phone' => '+51999000085'],
+            ['full_name' => 'Rocío Esperanza Valenzuela Herrera', 'document' => '67890132', 'email' => 'rocio.valenzuela@gmail.com', 'phone' => '+51999000086'],
+            ['full_name' => 'Damián Nicolás Araya Castillo', 'document' => '78901243', 'email' => 'damian.araya@gmail.com', 'phone' => '+51999000087'],
+            ['full_name' => 'Aurora Valentina Contreras Vega', 'document' => '89012354', 'email' => 'aurora.contreras@gmail.com', 'phone' => '+51999000088'],
+            ['full_name' => 'Simón Alejandro Figueroa Pinto', 'document' => '90123465', 'email' => 'simon.figueroa@gmail.com', 'phone' => '+51999000089'],
+            ['full_name' => 'Julieta Fernanda Espinosa Muñoz', 'document' => '12345687', 'email' => 'julieta.espinosa@gmail.com', 'phone' => '+51999000090'],
+            ['full_name' => 'Facundo Martín Guerrero Lagos', 'document' => '23456789', 'email' => 'facundo.guerrero@gmail.com', 'phone' => '+51999000091'],
+            ['full_name' => 'Alma Isidora Carrasco Bravo', 'document' => '34567800', 'email' => 'alma.carrasco@gmail.com', 'phone' => '+51999000092'],
+            ['full_name' => 'Thiago Benjamín Acosta Fuentes', 'document' => '45678911', 'email' => 'thiago.acosta@gmail.com', 'phone' => '+51999000093'],
+            ['full_name' => 'Olivia Macarena Ibarra Rojas', 'document' => '56789022', 'email' => 'olivia.ibarra@gmail.com', 'phone' => '+51999000094'],
+            ['full_name' => 'Ian Sebastián Miranda Peña', 'document' => '67890133', 'email' => 'ian.miranda@gmail.com', 'phone' => '+51999000095'],
+            ['full_name' => 'Bianca Antonella Peña Salazar', 'document' => '78901244', 'email' => 'bianca.pena@gmail.com', 'phone' => '+51999000096'],
+            ['full_name' => 'Dylan Cristóbal Salinas Quiroz', 'document' => '89012355', 'email' => 'dylan.salinas@gmail.com', 'phone' => '+51999000097'],
+            ['full_name' => 'Mía Fernanda Campos Ávila', 'document' => '90123466', 'email' => 'mia.campos@gmail.com', 'phone' => '+51999000098'],
+            ['full_name' => 'Liam Eduardo Molina Escobar', 'document' => '12345688', 'email' => 'liam.molina@gmail.com', 'phone' => '+51999000099'],
+            ['full_name' => 'Emma Valentina Rivas Gallegos', 'document' => '23456790', 'email' => 'emma.rivas@gmail.com', 'phone' => '+51999000100'],
+        ];
+
+        foreach ($data as $item) {
+            Subscription::create($item);
+        }
+    }
+}
