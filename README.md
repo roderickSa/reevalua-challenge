@@ -120,6 +120,7 @@ Respuesta:
 ```
 
 **Ubicación del archivo**: Una vez finalizado, el archivo estará en: `/storage/exports/reports/2025-12-24/report.zip`
+* Se genera con la fecha del dia cuando se creo el reporte
 
 ## 📝 Ejemplo de Consulta del zip generado
 
