@@ -29,13 +29,13 @@ php artisan migrate
 php artisan seed
 ```
 
-5. **Levantar worker**:
+6. **Levantar worker**:
 
 ```bash
 php artisan queue:work
 ```
 
-5. **Levantar Server**:
+7. **Levantar Server**:
 
 ```bash
 php artisan serve
