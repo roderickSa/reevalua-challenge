@@ -17,6 +17,30 @@ composer install
 
 REPORT_CHUNK_SIZE=100
 
+4. **Ejecutar migraciones**:
+
+```bash
+php artisan migrate
+```
+
+5. **Ejecutar seeders**:
+
+```bash
+php artisan seed
+```
+
+5. **Levantar worker**:
+
+```bash
+php artisan queue:work
+```
+
+5. **Levantar Server**:
+
+```bash
+php artisan serve
+```
+
 ## 🗂 Estructura Principal
 
 ### UseCase: `GenerateReportDateUseCase`
