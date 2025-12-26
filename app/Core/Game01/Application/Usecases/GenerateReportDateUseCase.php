@@ -66,6 +66,10 @@ class GenerateReportDateUseCase
                     }
                 }
 
+                if ($result['last_id'] === null) {
+                    break;
+                }
+
                 $lastId = $result['last_id'];
             }
         }
